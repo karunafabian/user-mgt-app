@@ -7,7 +7,7 @@ const Edit = ({  selectedEmployee, setUsers, setIsEditing }) => {
   const [firstName, setFirstName] = useState(selectedEmployee.firstName);
   const [lastName, setLastName] = useState(selectedEmployee.lastName);
   const [email, setEmail] = useState(selectedEmployee.email);
-  const [phone, setPhone] = useState(selectedEmployee.phone);
+  const [phone, setPhone] = useState(selectedEmployee.phoneNumber);
   const [dob, setDob] = useState(selectedEmployee.dob);
   const [address, setAddress] = useState(selectedEmployee.address);
 
