@@ -18,7 +18,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-      fetch("http://ec2-3-140-186-196.us-east-2.compute.amazonaws.com:8080/api/users")
+      fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users")
           .then(res => res.json())
           .then(
               (data) => {
@@ -58,7 +58,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
         });
 
         
-          fetch("http://ec2-3-140-186-196.us-east-2.compute.amazonaws.com:8080/api/users/"+id,
+          fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users/"+id,
           {
             method: "DELETE"
           })
@@ -77,7 +77,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
 
   const handleMessages = e => {
 
-    const url = "http://ec2-3-140-186-196.us-east-2.compute.amazonaws.com:8080/api/messages"; 
+    const url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/messages"; 
 
       try {
         

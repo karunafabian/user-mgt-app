@@ -20,7 +20,7 @@ const Add = ({ setUsers, setIsAdding }) => {
       });
     }
 
-    const url = "http://ec2-3-140-186-196.us-east-2.compute.amazonaws.com:8080/api/users" 
+    const url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users" 
       const data = {
         firstName: firstName,
         lastName: lastName,
@@ -45,7 +45,7 @@ const Add = ({ setUsers, setIsAdding }) => {
         console.error(error.message)
       }
 
-      await fetch("http://ec2-3-140-186-196.us-east-2.compute.amazonaws.com:8080/api/users")
+      await fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users")
       .then(res => res.json())
         .then(
             (data) => {
