@@ -34,7 +34,7 @@ const Edit = ({  selectedEmployee, setUsers, setIsEditing }) => {
     };
 
     
-      const url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users/" + id
+      const url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com/api/users/" + id
       const data = {
         id: id,
         firstName: firstName,
@@ -67,7 +67,7 @@ const Edit = ({  selectedEmployee, setUsers, setIsEditing }) => {
         console.error(error.message)
       }
 
-      await fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users")
+      await fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com/api/users")
       .then(res => res.json())
         .then(
             (data) => {

@@ -18,7 +18,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-      fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users")
+      fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com/api/users")
           .then(res => res.json())
           .then(
               (data) => {
@@ -58,7 +58,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
         });
 
         
-          fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users/"+id,
+          fetch("https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com/api/users/"+id,
           {
             method: "DELETE"
           })
@@ -77,7 +77,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
 
   const handleMessages = e => {
 
-    const url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/messages"; 
+    const url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com/api/messages"; 
 
       try {
         

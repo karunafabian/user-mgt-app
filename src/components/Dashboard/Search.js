@@ -17,7 +17,7 @@ const Search = ({ setUsers}) => {
       });
     }
 
-    let url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users/filter?";
+    let url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com/api/users/filter?";
     if(searchParam ==="id") {
       url = url + "id=" + searchVal;
     } else if (searchParam ==="firstName"){
@@ -52,7 +52,7 @@ const Search = ({ setUsers}) => {
   const handleAll = e => {
     e.preventDefault();
 
-    const url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com:8080/api/users"; 
+    const url = "https://ihjsrvkjtl.execute-api.us-east-2.amazonaws.com/api/users"; 
 
       try {
         
